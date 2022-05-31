@@ -57,10 +57,10 @@ buttons = [
     [
                         InlineKeyboardButton(
                              text="🏹 Summon Me",
-                             url="https://t.me/MikuXProBot?startgroup=true"),
+                             url="https://t.me/MikuNakano_Xbot?startgroup=true"),
                         InlineKeyboardButton(
                              text="🗞️ Repo",
-                             url="https://github.com/h0daka/Miku-Nakano"),
+                             url="https://github.com/MrSumit749/Miku-Nakano"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -214,10 +214,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/MikuXsupport"),
+                             url=f"https://t.me/anime_chat_universe_club"),
                        InlineKeyboardButton(
                              text="🛰️ Updates",
-                             url="https://t.me/MikuXUpdates")
+                             url="https://t.me/MikuNakano_X")
                      ] 
                 ]
             ),
@@ -275,7 +275,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="t.me/anime_chat_universe_club")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -329,12 +329,12 @@ def miku_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="t.me/h0daka"),
+                    InlineKeyboardButton(text="🌏 My Master", url="t.me/MrSumit004"),
                     InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/MikuXUpdates"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/Mikussupport"),
+                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/MikuNakano_X"),
+                    InlineKeyboardButton(text="🚑 Support", url="t.me/anime_chat_universe_club"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_back")
@@ -382,7 +382,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuXProBot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuNakano_Xbot?start=help")
                   ]
                 ]
             ),
@@ -399,7 +399,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="t.me/anime_chat_universe_club")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
